@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css"> <!-- Linking the style.css file -->
+</head>
+
+<body>
+    <header>The Wonders of Sri Lankan Food</header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="register.html" class="active">Newsletter</a></li>
+        </ul>
+    </nav>
+
+    <div class="banner">
+        <img src="../images/srilankasunset.png" alt="A picture of a Sri Lankan Sunset">
+        <div class="banner-overlay">
+            <div class="banner-text">
+                <h1>The Wonders of Sri Lankan Food</h1>
+            </div>
+        </div>
+    </div>
+
+    <h1>Sign up for our newsletter.</h1>
+    <p>By signing up to our newsletter you will be notified about upcoming Sri Lankan recipes.</p> <br><br>
+    <p>A new recipe
+        will be posted every week!</p>
+    <form id="registrationForm">
+
+        <!-- THIS SECTION MAKES SURE A VALID FIRST NAME IS ENTERED -->
+        <label for="firstName">First Name:</label><br>
+        <input pattern="^[A-Z][a-zA-Z+$" title="Please enter only letters" type="text" name="firstName"
+            placeholder="Enter letters only" required><br><br>
+        <!-- END OF FIRST NAME VALIDATION -->
+
+        <!-- THIS SECTION MAKES SURE A VALID LAST NAME IS ENTERED -->
+        <label for="Lastname">Last Name:</label><br>
+        <input pattern="^[A-Z][a-zA-Z]+$" title="Please enter only letters" type="text" name="lastName"
+            placeholder="Enter letters only" required><br><br>
+        <!-- END OF LAST NAME VALIDATION -->
+
+
+        <label for="emailAddress">Email address:</label><br>
+        <input type="email" id="emailAddress" name="emailAddress" placeholder="Please enter a valid email"
+            title="Please enter a valid email address (e.g., example@domain.com)" required><br><br>
+
+
+        <label for="mobileNumber" id="mobileNumber">Mobile number:</label><br>
+        <input pattern="[1-9]{1}[0-9]{9}" type="tel" id="tel" name="country_code"
+            title="Please enter a valid 10-digit mobile number starting with a non-zero digit" required> <br><br>
+
+
+        <label for="password" id="password">Password:</label><br>
+        <input type="password" minlength="6" maxLength="12" required><br><br>
+
+
+        <label for="confirmPassword" id="Confirmpassword"> Confirm password:</label><br>
+        <input type="password" required><br><br>
+
+        <!-- THE SUBMIT BUTTON FOR THE FORM -->
+        <input type="submit" id="submit" name="submit" value="Submit"><br><br>
+
+
+    </form>
+
+    <script src="script.js"></script> <!-- Linking the script.js file -->
+
+    <footer>
+        Shamal Madawana Liyana Hettiarachchige<br>
+        Assessment 3 Due Date: 29th May 2025
+    </footer>
+
+</body>
+
+</html>
